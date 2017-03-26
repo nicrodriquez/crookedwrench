@@ -64,10 +64,14 @@ h1, h2, h3, h4{
 
 body{
 	font-family: $f-body;
+	background: #111;
 }
 
 header{
 	background: $menu-background;
+	&.sticky-container{
+		z-index: 1000;
+	}
 }
 
 .row{
@@ -83,10 +87,11 @@ section{
 		background: #3f3f3f;
 	}
 	&.feature{
+		position: relative;
 		background-color: #0f0e0e;
 		background-image: url('../images/fire_bg.jpg');
 		background-attachment: fixed;
-		padding: 20vh 0 15vh;
+		padding: 25vh 0 25vh;
 		text-align: center;
 		margin-top: -68px;
 		@include breakpoint(small down){
@@ -96,6 +101,29 @@ section{
 		}
 		img{
 			width: 45%;
+		}
+	}
+}
+
+.social{
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	
+	padding: 10px 0 0;
+	border-top: 3px solid rgba(255, 255, 255, 0.1);
+	color: white;
+	font-family: $f-primary;
+	font-weight: 600;
+	text-transform: uppercase;
+	a{
+		color: white;
+		margin: 0 0.2em;
+		font-size: 160%;
+		transition: $trans-hover;
+		&:hover{
+			opacity: .7;
 		}
 	}
 }
