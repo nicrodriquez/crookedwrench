@@ -105,7 +105,7 @@ footer{
 	color: #f7f7f7;
 }
 
-#the-meat, #the-times{
+#the-meat{
 	h4{
 		font-family: $f-secondary;
 		font-weight: 800;
@@ -120,6 +120,20 @@ footer{
 	}
 }
 
+#the-times{
+	h4{
+		font-family: $f-secondary;
+		font-weight: 800;
+		border-bottom: 1px solid rgba(255,255,255,0.1);
+		margin-top: 4px;
+		color: #f7f7f7;
+		font-size: 1.45rem;
+	}
+	p.cooking-style{
+		margin-bottom: 0;
+		font-weight: bold;
+	}
+}
 
 
 .callout {
