@@ -285,12 +285,27 @@
 	      </div>
 	    </div>
 	</section>
-   
+   <section>
+	   
+	   <div id="instafeed"></div>
+	   
+   </section>
    <footer>&copy; 2017 | Crooked Wrench | Designed by <a href="http://nic.rdrqz.co" target="_blank">nic.rdrqz.co</a></footer>
 
     
   </body>
-  <script src="bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="js/instafeed.min.js"></script>
+	
+	<script type="text/javascript">
+	    var userFeed = new Instafeed({
+	        get: 'user',
+	        userId: '2936454145',
+	        clientId: 'da60e73e731b4c61b6161d723f070c24'
+	    });
+	    userFeed.run();
+	</script>
+	
+	<script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/app.js"></script>
