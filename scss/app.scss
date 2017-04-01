@@ -138,13 +138,37 @@ footer{
 	color: #f7f7f7;
 }
 
-#the-meat{
+#the-meat, #the-sauce{
 	.meat-card{
 		padding: 6px 8px;
 		background: rgba(255,255,255,0.05);
 		margin-top: 8px;
 		border-radius: 2px;
 		transition: $trans-hover;
+		&.sauce{
+			background: transparent;
+			background-size: cover;
+			background-position: center center;
+			&.ket{
+				background-image: url('../images/ketchup.png');
+			}
+			&.pepp{
+				background-image: url('../images/pepper.png');
+			}
+			&.pap{
+				background-image: url('../images/paprika.png');
+			}
+			&.hon{
+				background-image: url('../images/honey.png');
+			}
+			&.smoke{
+				background-image: url('../images/smoke.png');
+			}
+			&.mus{
+				background-image: url('../images/mustard.png');
+			}
+			
+		}
 		&:hover{
 			box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.2);
 		}
