@@ -20,17 +20,24 @@
 	<div class="top-bar" id="main-menu" data-sticky data-options="marginTop:0;" style="width:100%">
 	  <div class="top-bar-left">
 	    <ul class="dropdown menu" data-dropdown-menu>
-	      <li class="menu-text logo"><img src="images/cw-logo.svg"></li>
+	      <li class="menu-text logo"><a href="index.html"><img src="images/cw-logo.svg"></a></li>
 	    </ul>
 	  </div>
 	  <div class="top-bar-right">
-	    <ul class="menu" data-responsive-menu="drilldown medium-dropdown" data-magellan>
+	    <ul class="dropdown menu" data-responsive-menu="drilldown medium-dropdown" data-magellan data-dropdown-menu>
 	      <li><a href="#the-meat">The Meat, The Temps</a></li>
-	      <li><a href="#the-times">The Smoke, The Times</a></li>
+	      <li class="has-submenu"><a href="#the-times">The Smoke, The Times</a>
+	      	<ul class="submenu menu vertical" data-submenu>
+	      		<li><a href="brisket.html">Brisket</a></li>
+	      	</ul>
+	      </li>
+	      
+
 	      <li><a href="#the-sauce">That One Sauce</a></li>
 	    </ul>
 	  </div>
-	</div></header>
+	</div>
+	</header>
 
     <section class="feature">
 	    <div class="row">
@@ -140,38 +147,10 @@
 	        <div class="callout">
 	          <h3>The Prep, The Smoke</h3>
 	          <p>I think one of the most asked question I get is about prep and smoke time, so here is a general idea of what we do to smoke meat the "crooked" way:</p>
-	          <h4>Brisket</h4>
-	          <div class="row">
-	            
-	            <div class="large-12 columns"> 
-		            <p class="cooking-style">Choose your meat!</p>
-					<p>I would like to think that any meat you buy can be made into something beautiful, but as with most things in life quality matters. I have yet to find a single store that brings global emat satisfaction. Costco for the most part is our best best for Quality and Price. Their beef is no less than Choice Grade and for the most part you can find any cut in a Prime Grade. Speaking directly to brisket Prime Grade is the way to go. We usually look at the # of people we are trying to serve then progess to deciding on the size of briskets in relation to that. One 20lb brisket is not equal to two 10lb briskets, the math is as simple when it comes to the meat of the bbq gods. We look for a decent amount of marbling, a softness to the fat along the fatty side and a softer deckle side. The softness of the fat identifies the thickness of the fat in that area. The harder the fat the more that you are looking to have to trim away.</p>
-				</div>
-
-	    
-	            
-	            <div class="large-12 columns"> 
-		            <p class="cooking-style">Prep</p>
-					<p>Trim fat to ~1/4 fat thickness around the entirety of the brisket.</p>
-				</div>
-	            
-	            <div class="large-12 columns"> 
-		            <p class="cooking-style">Rub</p>
-					<p>There is technically two parts to this but they both require rub or rubbing, so here it goes. 1 - you are covering the brisket in mustard. 2 - you are generously dusting the meat with your spice mix. </p>
-					<p>Once the meat is lathered and dusted, cover and refrigerate for a minimum 12 hours. The more time it sits lathered/dusted the longer the meat is tenderizing and soaking in the seasons.</p>
-				</div>
-	            
-	            <div class="large-12 columns"> 
-		            <p class="cooking-style">Smoke</p>
-					<p>The most glorious and patience forming part of the process. Our briskets sit in a smoker for no less than 8 hours, @ a of no less than 220&deg; but ideally 275&deg;</p>
-				</div>
-	            
-	            <div class="large-12 columns"> 
-		            <p class="cooking-style">Wrap</p>
-					<p>From the smoke to the cloak! It's time to wrap the brisket currently we are using aluminum foil to induce tenderness. The time here is a minimum of 4 hours for a total cook time of 12 hours. Personally, we want the fat cap to feel like jello, once it's there it's time to eat.</p>
-				</div>	
-	            
-	  			</div>
+	          <div class="row"><div class="large-4 medium-6 columns"><a class="brisket" href="brisket.html">Brisket</a></div>
+	          <div class="large-4 medium-6 columns"><a class="ribs" href="#">Pork Ribs - Coming Soon</a></div>
+	          <div class="large-4 medium-6 columns end"><a class="chicken" href="#">Chicken - Coming Soon</a></div></div>
+	        </div>
 <!--
 	          <h4>Pork Ribs</h4>
 	          <div class="row">
@@ -285,25 +264,11 @@
 	      </div>
 	    </div>
 	</section>
-   <section>
-	   
-	   <div id="instafeed"></div>
-	   
-   </section>
    <footer>&copy; 2017 | Crooked Wrench | Designed by <a href="http://nic.rdrqz.co" target="_blank">nic.rdrqz.co</a></footer>
 
     
   </body>
-	<script type="text/javascript" src="js/instafeed.min.js"></script>
-	
-	<script type="text/javascript">
-	    var userFeed = new Instafeed({
-	        get: 'user',
-	        userId: '2936454145',
-	        clientId: 'da60e73e731b4c61b6161d723f070c24'
-	    });
-	    userFeed.run();
-	</script>
+
 	
 	<script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>

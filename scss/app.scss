@@ -197,10 +197,34 @@ footer{
 	h4{
 		font-family: $f-secondary;
 		font-weight: 800;
-		border-bottom: 1px solid rgba(255,255,255,0.1);
 		margin-top: 4px;
 		color: #f7f7f7;
 		font-size: 1.45rem;
+	}
+	a{
+		font-family: $f-secondary;
+		font-weight: 800;
+		color: #f7f7f7;
+		padding: 10px;
+		cursor: pointer;
+		display: block;
+		height: 120px;
+		border-radius: 2px;
+		&.brisket{
+			background-image: url('../images/brisket.jpg');
+			background-size: cover;
+			background-position: center center;
+		}
+		&.ribs{
+			background-image: url('../images/ribs.jpg');
+			background-size: cover;
+			background-position: center center;
+		}
+		&.chicken{
+			background-image: url('../images/chicken.jpg');
+			background-size: cover;
+			background-position: center center;
+		}
 	}
 	p.cooking-style{
 		margin-bottom: 0;
@@ -213,8 +237,8 @@ footer{
     position: relative;
     margin: 0 0 1rem 0;
     padding: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: none;
+    border-bottom: none;
     border-left: none;
     border-right: none;
     border-radius: 0;
@@ -311,8 +335,18 @@ footer{
   }
 }
 
+.submenu li{
+	//margin-top: 20px;
+	a{
+		background: $menu-background;
+	}
+}
+
 .dropdown.menu .submenu {
   border: none;
+}
+.dropdown.menu>li.is-dropdown-submenu-parent>a::after{
+	border-color: #f7f7f7 transparent transparent;
 }
 
 .dropdown.menu .is-dropdown-submenu-parent.is-right-arrow>a::after {
