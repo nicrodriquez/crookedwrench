@@ -243,7 +243,8 @@ footer{
     border-right: none;
     border-radius: 0;
     background-color: transparent;
-    color: #ffffff
+    color: #ffffff;
+    &.form{text-align: center;}
 }
 
 #the-sauce .callout{
@@ -363,6 +364,6 @@ footer{
 
 iframe{
 	height: 100vh;
-	width: 50vw;
+	width: 100%;
 }
 
