@@ -360,15 +360,3 @@ footer{
 .js-drilldown-back::before {
   border-color: transparent #fff transparent transparent;
 }
-
-iframe{
-	height: 100vh;
-	width: 50vw;
-	html{
-		display: none;
-	}
-}
-
-iframe html body .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewFormBanner{
-		height: 0 !important;
-	}
